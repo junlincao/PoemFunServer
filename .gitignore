@@ -1,0 +1,30 @@
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# IntelliJ files
+.idea
+*.iml
+
+# Maven output folder
+target
+
+# Misc
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
