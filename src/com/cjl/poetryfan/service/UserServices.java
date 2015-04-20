@@ -1,6 +1,6 @@
-package com.cjl.poemfun.service;
+package com.cjl.poetryfan.service;
 
-import com.cjl.poemfun.dao.UserDao;
+import com.cjl.poetryfan.dao.UserDao;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

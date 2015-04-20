@@ -1,6 +1,6 @@
-package com.cjl.poemfun.dao;
+package com.cjl.poetryfan.dao;
 
-import com.cjl.poemfun.domain.User;
+import com.cjl.poetryfan.domain.User;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
@@ -25,7 +25,7 @@ public class UserDao extends BaseJdbcDao {
             public User mapRow(ResultSet resultSet, int i) throws SQLException {
                 User u = new User();
                 u.setName(resultSet.getString("name"));
-                u.setPwd(resultSet.getString("db.password"));
+                u.setPwd(resultSet.getString("password"));
                 u.setUserImg(resultSet.getString("img"));
                 u.setCreateDate(resultSet.getDate("create_date"));
 

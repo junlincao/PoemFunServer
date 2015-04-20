@@ -1,4 +1,4 @@
-package com.cjl.poemfun.domain;
+package com.cjl.poetryfan.domain;
 
 import java.util.Date;
 

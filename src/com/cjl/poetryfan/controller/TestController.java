@@ -1,8 +1,8 @@
-package com.cjl.poemfun.controller;
+package com.cjl.poetryfan.controller;
 
-import com.cjl.poemfun.dao.UserDao;
-import com.cjl.poemfun.domain.User;
-import com.cjl.poemfun.service.UserServices;
+import com.cjl.poetryfan.dao.UserDao;
+import com.cjl.poetryfan.domain.User;
+import com.cjl.poetryfan.service.UserServices;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

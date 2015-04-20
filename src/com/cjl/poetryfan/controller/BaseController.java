@@ -1,4 +1,4 @@
-package com.cjl.poemfun.controller;
+package com.cjl.poetryfan.controller;
 
 import javax.servlet.http.HttpServletResponse;
 
