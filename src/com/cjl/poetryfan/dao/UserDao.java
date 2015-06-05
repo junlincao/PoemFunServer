@@ -18,7 +18,7 @@ import java.util.List;
 public class UserDao extends BaseJdbcDao {
 
     public User queryUserByName(String name) {
-        String sql = "select name, password, img, status, create_date from user where name=?";
+        String sql = "select name, password, image, status, create_date from user where name=?";
 
         List<User> users = getJdbcTemplate().query(sql, new String[]{name}, new RowMapper<User>() {
             @Override
@@ -26,8 +26,9 @@ public class UserDao extends BaseJdbcDao {
                 User u = new User();
                 u.setName(resultSet.getString("name"));
                 u.setPwd(resultSet.getString("password"));
-                u.setUserImg(resultSet.getString("img"));
+                u.setUserImg(resultSet.getString("image"));
                 u.setCreateDate(resultSet.getDate("create_date"));
+
 
                 return u;
             }
