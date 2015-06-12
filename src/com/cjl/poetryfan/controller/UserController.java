@@ -14,16 +14,17 @@ import java.io.IOException;
 
 
 /**
+ * User service
  * Created by cjl on 2015/4/19.
  */
 @Controller
-@RequestMapping("/test")
-public class TestController extends BaseController {
+@RequestMapping("/user")
+public class UserController extends BaseController {
     @Resource
     UserServices userServices;
 
     @RequestMapping("")
-    public void test(HttpServletRequest request, HttpServletResponse response, @RequestParam("name") String name) {
+    public void checkExist(HttpServletRequest request, HttpServletResponse response, @RequestParam("name") String name) {
         UserDao ud = userServices.getUserDao();
         User u = ud.queryUserByName(name);
 
